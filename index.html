@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Scroll Animation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Full-screen image container -->
+    <div id="imageContainer" class="full-screen">
+        <img id="staticImage" src="photo.png" alt="Static Image" class="full-screen-image">
+        <img id="animatedGif" src="animation.gif" alt="Animation" class="full-screen-image hidden">
+        <img id="finalImage" src="photo1.png" alt="Final Image" class="full-screen-image hidden">
+    </div>
+    
+    <!-- Scroll indicator (optional visual cue) -->
+    <div id="scrollIndicator" class="scroll-indicator">
+        <div class="scroll-arrow">↓</div>
+        <span>Scroll to begin</span>
+    </div>
+    
+    <!-- Main content that appears after animation -->
+    <div id="mainContent" class="main-content">
+        <h1 class="coming-soon">Coming Soon</h1>
+    </div>
+    
+    <!-- Scroll overlay to prevent scrolling during animation -->
+    <div id="scrollOverlay" class="scroll-overlay hidden"></div>
+    
+    <!-- Interactive icon in upper right corner -->
+    <div id="iconContainer" class="icon-container">
+        <img id="okapIcon" src="okap.png" alt="Okap Icon" class="okap-icon">
+    </div>
+    
+    <!-- Audio element for music -->
+    <audio id="backgroundMusic" loop>
+        <source src="ring-ring-ring.mp3" type="audio/mpeg">
+        <source src="ring-ring-ring.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
